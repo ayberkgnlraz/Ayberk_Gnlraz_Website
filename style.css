@@ -1,0 +1,120 @@
+/* style.css */
+
+/* Reset default margin and padding */
+/* For website.html */
+body {
+    padding-left: 0px; /* Adjusted to match the width of the menu */
+}
+
+/* For ben.html, guncel.html, gelecek.html */
+.ben-content {
+    margin-left: 240px; /* Adjusted to match the width of the menu */
+    padding-top: 20px; /* Add padding to the top to ensure content is not hidden by the menu */
+}
+
+
+/* Main menu styles */
+.menu {
+    background-color: #eeddbd; /* Beige menu background */
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow-y: auto; /* Add vertical scroll if needed */
+    transition: width 0.8s; /* Smooth transition effect */
+}
+
+.menu:hover {
+    width: 200px; /* Expanded width on hover */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #eeddbd;
+    color: black; /* Change link color to black */
+    text-decoration: none;
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #d1ba98;
+}
+
+.menu ul li a.active {
+    background-color: #3ea6ff;
+    color: white;
+}
+
+.menu ul li a.active:hover {
+    background-color: #2b7bbd;
+}
+
+/* Content area styles */
+.content {
+    margin-left: 240px; /* Adjust margin to accommodate menu width and padding */
+    padding: 20px; /* Add padding to the content area */
+}
+
+/* Styling for buttons */
+.custom-button {
+    background-color: #3ea6ff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    .custom-button:hover {
+        transform: scale(1.1);
+    }
+        .custom-button:active {
+            transform: scale(0.9);
+        }
+        
+}
+
+/* Styling for popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.popup-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+

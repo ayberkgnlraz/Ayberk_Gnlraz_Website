@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gelecek</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="ben.html">Ben</a></li>
+            <li><a href="guncel.html">Güncel</a></li>
+            <li><a href="gelecek.html">Gelecek</a></li>
+        </ul>
+    </div>
+    <h1 class="futuristic-text">These are what might happen to our world!.</h1>
+    <button class="custom-button" onclick="showPopup()">Buraya Tıklayacaklar</button>
+ 
+    <div class="popup" id="popup">
+        <span class="close-btn" onclick="closePopup()">X</span>
+        <p class="popup-text">Sen kahin misin?</p>
+    </div>
+ 
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+ 
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+<script src="script.js" defer></script>
+
+</html>

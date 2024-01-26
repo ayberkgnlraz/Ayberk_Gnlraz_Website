@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Güncel</title>
+</head>
+<div class="menu">
+    <ul>
+        <li><a href="ben.html">Ben</a></li>
+        <li><a href="guncel.html">Güncel</a></li>
+        <li><a href="gelecek.html">Gelecek</a></li>
+    </ul>
+</div>
+<h1 class="futuristic-text">This is what is up in the world right now!</h1>
+<button class="custom-button" onclick="showPopup()">Buraya Tıklıyorlar</button>
+
+<div class="popup" id="popup">
+    <span class="close-btn" onclick="closePopup()">X</span>
+    <p class="popup-text">Günün mottosu budur!</p>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>s what's up right now in the world!</p>
+</body>
+<script src="script.js" defer></script>
+
+</html>
